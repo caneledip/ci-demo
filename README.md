@@ -1,5 +1,6 @@
 Continuous Integration Demo
 ===========================
+[![Python application](https://github.com/caneledip/ci-demo/actions/workflows/python-unittest.yml/badge.svg)](https://github.com/caneledip/ci-demo/actions/workflows/python-unittest.yml)
 
 This project demonstrates use of Github Actions to build and test a Python project.  
 
