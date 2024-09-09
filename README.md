@@ -1,6 +1,6 @@
 Continuous Integration Demo
 ===========================
-[![Python application](https://github.com/caneledip/ci-demo/actions/workflows/python-unittest.yml/badge.svg)](https://github.com/caneledip/ci-demo/actions/workflows/python-unittest.yml)
+[![Python application](https://github.com/caneledip/ci-demo/actions/workflows/python-unittest.yml/badge.svg)](https://github.com/caneledip/ci-demo/actions/workflows/python-unittest.yml) [![Style checking](https://github.com/caneledip/ci-demo/actions/workflows/style-checking.yml/badge.svg)](https://github.com/caneledip/ci-demo/actions/workflows/style-checking.yml)
 
 This project demonstrates use of Github Actions to build and test a Python project.  
 

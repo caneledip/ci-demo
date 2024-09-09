@@ -17,7 +17,7 @@ def variance(data):
     This is different from the Python library function statistics.variance
     which returns the sample variance, where the sum is divided by (n-1).
 
-    Example: variance([1,5]) is ((1-3)**2 + (5-3)**2)/2 = 4.
+    Example: variance([1, 5]) is ((1-3)**2 + (5-3)**2)/2 = 4.
 
     :param data: list of numbers for which variance will be computed.
            Must contain at least one element.
@@ -33,7 +33,6 @@ def variance(data):
     >>> variance([1000000, 1000004])
     4.0
     """
-    # ugly code.
     n = len(data)
     if n == 0:
         raise ValueError("List must contain at least one value")
