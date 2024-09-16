@@ -1,5 +1,5 @@
 from unittest import TestCase
-from statistics import variance, stdev
+from statistics import variance, stdev, average
 from math import sqrt
 
 class StatisticsTest(TestCase):
@@ -17,7 +17,13 @@ class StatisticsTest(TestCase):
         # variance([0,4,4,8]) == 8
         self.assertAlmostEqual(8.0, variance([0.1, 4.1, 4.1, 8.1]))
 
+    def test_varaince_empty_list(self):
+        """variance should raise error when there are no member in list."""
+        with self.assertRaises(ValueError):
+            variance([])
+
     def test_stdev(self):
+        """stdev of typical values"""
         # standard deviation of a single value should be zero
         self.assertAlmostEqual(0.0, stdev([10.0]))
         # simple test
@@ -25,8 +31,14 @@ class StatisticsTest(TestCase):
         # variance([0, 0.5, 1, 1.5, 2.0]) is 0.5
         self.assertAlmostEqual(sqrt(0.5), stdev([0, 0.5, 1, 1.5, 2]))
 
+    def test_average(self):
+        """average of values"""
+        # test no value for average
+        with self.assertRaises(ValueError):
+            average([])
+        self.assertEqual(10, average([30, 10, 5, 5, 0]))
+
 
 if __name__ == '__main__':
     import unittest
     unittest.main(verbosity=1)
-
